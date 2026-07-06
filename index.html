@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Synth</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Piano.css">
+    <script src="Piano.js" defer></script>
+</head>
+<body>
+    <div class="app-container">
+        <div class="piano-header">
+            <h1>Virtual Synth</h1>
+            <p>Use your keyboard to play</p>
+        </div>
+        <div class="piano-wrapper">
+            <div class="control-panel">
+                <div class="control-group">
+                    <label for="volume-slider">Vol</label>
+                    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+                </div>
+                <div class="control-group octave-controls">
+                    <button id="btn-octave-down" class="ctrl-btn">Oct -</button>
+                    <span id="octave-display">0</span>
+                    <button id="btn-octave-up" class="ctrl-btn">Oct +</button>
+                </div>
+                <div class="control-group record-controls">
+                    <button id="btn-record" class="ctrl-btn record-btn" title="Record">⏺</button>
+                    <button id="btn-stop" class="ctrl-btn stop-btn" title="Stop">⏹</button>
+                    <button id="btn-play" class="ctrl-btn play-btn" title="Play">▶</button>
+                </div>
+                <div class="control-group toggle-group">
+                    <label for="reverb-toggle">Reverb</label>
+                    <input type="checkbox" id="reverb-toggle" class="toggle-checkbox">
+                </div>
+            </div>
+            <div class="piano">
+                <button id="btn-a" class="key-white" data-note="C">
+                    <span class="note">C</span><span class="hint">A</span>
+                </button>
+                <button id="btn-w" class="key-black" data-note="C#">
+                    <span class="note">C#</span><span class="hint">W</span>
+                </button>
+                <button id="btn-s" class="key-white" data-note="D">
+                    <span class="note">D</span><span class="hint">S</span>
+                </button>
+                <button id="btn-e" class="key-black" data-note="D#">
+                    <span class="note">D#</span><span class="hint">E</span>
+                </button>
+                <button id="btn-d" class="key-white" data-note="E">
+                    <span class="note">E</span><span class="hint">D</span>
+                </button>
+                <button id="btn-f" class="key-white" data-note="F">
+                    <span class="note">F</span><span class="hint">F</span>
+                </button>
+                <button id="btn-t" class="key-black" data-note="F#">
+                    <span class="note">F#</span><span class="hint">T</span>
+                </button>
+                <button id="btn-g" class="key-white" data-note="G">
+                    <span class="note">G</span><span class="hint">G</span>
+                </button>
+                <button id="btn-y" class="key-black" data-note="G#">
+                    <span class="note">G#</span><span class="hint">Y</span>
+                </button>
+                <button id="btn-h" class="key-white" data-note="A">
+                    <span class="note">A</span><span class="hint">H</span>
+                </button>
+                <button id="btn-u" class="key-black" data-note="A#">
+                    <span class="note">A#</span><span class="hint">U</span>
+                </button>
+                <button id="btn-j" class="key-white" data-note="B">
+                    <span class="note">B</span><span class="hint">J</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
